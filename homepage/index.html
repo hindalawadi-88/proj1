@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Login</title>
+    <img src="Vector.png" height="50px" width="50px"> 
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+background: #0C1939;
+
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color:  #0C1939;
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #A9B2C3;
+    
+}
+
+.btn {
+   
+ padding: 20px 30px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(90deg, #C1DBFF 0%, #6DABFE 100%);
+   border: 1px solid #FFFFFF;
+  border-radius: 119px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.login{
+ 
+  background: linear-gradient(to right, #95C2FF, #98C4FE);
+}
+
+.signup {
+  background: linear-gradient(to right, #98C4FE, #95C2FF);
+}
+.btn:hover {
+    opacity: .8;
+}
+/* Circular graphic */
+body::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: -1;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+
+
+
+img 
+{max-width: 55px;  /* الحد الأقصى للعرض */
+max-height: 55px; /* الحد الأقصى للارتفاع */
+width: auto;      /* الحفاظ على نسبة العرض إلى الارتفاع */
+height: auto;
+margin-bottom: 5%;
+margin-left: -35%;
+margin-top: -50%;
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Hi there, what would you like to know?</h1>
+            <p>We provide an advanced chatbot designed to assist you and answer your inquiries in a professional manner.</p>
+            <div class="buttons">
+               <a href="login\index.html">
+                <button class="btn login">Login</button>
+               </a> 
+               <a href="signup\index.html">
+                <button class="btn signup">Sign Up</button>
+               </a>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>

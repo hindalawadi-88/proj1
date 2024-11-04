@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%; /* تأكد من أن HTML و body يأخذان كامل الارتفاع */
+    width: 100%; /* عرض كامل للشاشة */
+    overflow: hidden; /* منع التمرير إذا لم يكن ضروريًا */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+h2{
+        font-size: 50px; /* تكبير النص */
+        color: #1d3557; /* لون كحلي مشابه للزر */
+        margin-bottom: 50px; /* مسافة تحت العنوان */
+        text-align: center; /* تأكيد التوسيط */
+        font-weight: bold; /* خط عريض ليكون بارز */
+        position: relative;
+        top: -30px; /* رفع النص للأعلى */    
+}
+
+h1{
+    font-size: 90px; /* تكبير النص */
+    color: #f0f0f0; 
+    margin-bottom: 50px; /* مسافة تحت العنوان */
+    text-align: center; /* تأكيد التوسيط */
+    font-weight: bold; /* خط عريض ليكون بارز */
+    position: relative;
+    top: 55px; /* رفع النص للأعلى */  
+    text-align: left;  
+}
+ 
+img{
+
+    max-width: 55px;  /* الحد الأقصى للعرض */
+    max-height: 55px; /* الحد الأقصى للارتفاع */
+    width: auto;      /* الحفاظ على نسبة العرض إلى الارتفاع */
+    height: auto;
+    margin-right: 10px;
+}
+
+.container-a{
+    display: flex; /* استخدام Flexbox */
+            align-items: center;
+            justify-content: flex-start; /* محاذاة العناصر إلى اليسار */
+            width: 100%;
+           /* margin-left: 130px;*/
+
+            position: absolute; /* تحديد الموقع بشكل مطلق */
+    top: 120px; /* المسافة من أعلى الصفحة */
+    left: 64%;
+    transform: translateX(-50%);
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* امتداد كامل للعرض */
+    height: 100%; /* امتداد كامل للارتفاع */
+    max-width: 1200px; /* حدود عرض على الشاشات الكبيرة */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+/* قسم اليسار */
+.left-section {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* قسم اليمين */
+.right-section {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* لضبط الحد الأقصى للنموذج */
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #457b9d;
+}
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* ترتيب عمودي */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* ملء العرض */
+        height: 50%; /* نصف الشاشة لكل قسم */
+    }
+
+    form {
+        width: 90%; /* تقليل العرض للشاشات الصغيرة */
+    }
+}
